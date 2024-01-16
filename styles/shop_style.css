@@ -184,16 +184,7 @@ h3 {
 
 
 
-.page {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ABABAB;
-    font-family: 'Rubik', sans-serif;
-    font-size: 100px;
-}
+
 
 
 /* aside */
