@@ -17,6 +17,20 @@ body{
     min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    width: 15px; /* Ширина всего элемента навигации */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #18181B; /* Цвет дорожки */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #212124; /* Цвет бегунка */
+    border-radius: 20px; /* Округление бегунка */
+    border: 3px solid #333338; /* Оформление границ бегунка */
+}
+
 .container{
     background-color: #1E1E21;
     border-radius: 30px;

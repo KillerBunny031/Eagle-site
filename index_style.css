@@ -11,12 +11,19 @@ body {
     user-select: none;
 }
 
-
-
-
-
-
-
+body::-webkit-scrollbar {
+    width: 15px; /* Ширина всего элемента навигации */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #18181B; /* Цвет дорожки */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #212124; /* Цвет бегунка */
+    border-radius: 20px; /* Округление бегунка */
+    border: 3px solid #333338; /* Оформление границ бегунка */
+}
 
 .header {
     position: fixed;
@@ -52,11 +59,10 @@ body {
     position: relative;
     font-size: 1vw;
     color: #E4E4E4;
-
     text-decoration: none;
     padding: 12px;
     border-radius: 15px;
-    
+    transition: .5s;
 }
 
 .login{
