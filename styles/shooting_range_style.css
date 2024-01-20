@@ -158,6 +158,174 @@ p {
     margin-left: 2vw;
 }
 
+@media (max-width:2100px) {
+    .img, .img-reversed {
+        height: 350px;
+    }
+}
+
+@media (max-width:1700px) {
+    .img, .img-reversed {
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:1570px) {
+    .img, .img-reversed {
+        height: 250px;
+    }
+}
+
+@media (max-width:1300px) {
+    .img, .img-reversed {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+/* assortiment */
+
+.assortiment {
+    background-color: #212124;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 7.6px;
+    color: #73C398;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+    margin-bottom: 30px;
+}
+
+.card {
+    min-width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: #212124;
+    border: 1px solid #333338;
+    margin: 0px auto 65px auto;
+}
+
+@media (max-width:2100px) {
+    .card {
+        min-width: 350px;
+    }
+}
+
+@media (max-width:1850px) {
+    .card {
+        min-width: 320px;
+        height: 380px;
+    }
+}
+
+@media (max-width:1700px) {
+    .card {
+        min-width: 300px;
+    }
+}
+
+@media (max-width:1570px) {
+    .card {
+        min-width: 280px;
+        height: 320px;
+    }
+}
+
+@media (max-width:940px) {
+    .card {
+        width: 100%;
+        height: 320px;
+    }
+}
+
+.card-img {
+    background-color: #212124;
+    border-bottom: 1px solid #333338;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.card-text h2{
+    font-size: 30px;
+    margin: 0;
+}
+
+.card-text p{
+    font-size: 25px;
+    margin: 0;
+}
+
+.devider {
+    background-color: #212124;
+    height: 4px;
+    margin-bottom: 65px;
+}
+
+
+
+
+.pistols, .pp, .rifles, .bullets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -247,8 +415,3 @@ footer {
     font-size: 16px;
     line-height: 0px;
 }
-
-
-
-
-

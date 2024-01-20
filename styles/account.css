@@ -182,7 +182,7 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Rubik', sans-serif;
     /* margin: 100px; */
 
-
+    transition: .5s;
     text-decoration: none;
     color: #E4E4E4;
     font-size: 20px;
@@ -199,10 +199,8 @@ body::-webkit-scrollbar-thumb {
     margin: auto;   
     margin-left: 15%; 
     margin-right: auto;
-
     display: flex;
     user-select: none;
-
 }
 
 
@@ -254,6 +252,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
     border-radius: 10px;
     margin: auto;
+    transition: .5s;
 }
 
 .btn a:hover {
@@ -273,6 +272,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #ABABAE;
     font-family: 'Rubik', sans-serif;
+    transition: .5s;
 }
 
 .exit a:hover {

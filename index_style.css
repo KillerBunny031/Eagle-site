@@ -89,7 +89,6 @@ body::-webkit-scrollbar-thumb {
 .navbar a:hover{
     background: #212124;
     width: 15%;
-    
     transition: .5s;
 }
 
