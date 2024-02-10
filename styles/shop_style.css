@@ -150,21 +150,18 @@ aside {
     margin-top: 100px;
 }
 
-.void-1 {
-    width: 206px;
-    margin-top: 100px;
-}
-
-.void-2 {
-    width: 206px;
+.void-3 {
+    width: 200px;
     margin-top: 100px;
 }
 
 .move-container {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: sticky;
     max-width: 206px;
+    margin-top: 100px;
+    top: 10%;
 }
 
 @media (max-width: 1600px) {
@@ -211,6 +208,20 @@ main {
     main {
         margin: 0 10px;
     }
+}
+
+.warning {
+    background-color: #212124;
+    border: solid 1px #333338;
+    height: 80px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.warning span {
+    margin: auto;
+    font-size: 26px;
+    color: yellow;
 }
 
 .category-container:not(:last-child) {
