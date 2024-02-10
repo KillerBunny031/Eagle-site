@@ -193,11 +193,20 @@ p {
     .img, .img-reversed {
         height: 350px;
     }
+    .img img, .img-reversed img {
+        height: 350px;
+        width: 100%;
+    }
 }
 
 @media (max-width:1700px) {
     .img, .img-reversed {
         height: 300px;
+    }
+
+    .img img, .img-reversed img {
+        height: 300px;
+        width: 100%;
     }
 
     h2 {
@@ -213,11 +222,21 @@ p {
     .img, .img-reversed {
         height: 250px;
     }
+
+    .img img, .img-reversed img {
+        height: 250px;
+        width: 100%;
+    }
 }
 
 @media (max-width:1300px) {
     .img, .img-reversed {
         height: 200px;
+    }
+
+    .img img, .img-reversed img {
+        height: 100%;
+        width: 100%;
     }
 
     h2 {
@@ -249,6 +268,11 @@ p {
     margin-bottom: 30px;
 }
 
+.category-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .category-container:not(:last-child) {
     margin-bottom: 80px;
 }
@@ -260,7 +284,6 @@ p {
 
 .cards-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: content-box;
 }
@@ -273,6 +296,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    margin-right: 50px;
     border: solid 1px #212124;
     transition: .5s;
 }
@@ -317,6 +341,7 @@ p {
     font-size: 20px;
     transition: .5s;
     color: #333333;
+    margin-top: auto;
 }
 
 .card button img {
