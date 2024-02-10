@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&family=Rubik:wght@300;400;500;700;900&display=swap');
 
 
+* {
+    color: #E4E4E4;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
 
 body {
     background-color: #18181B;
-    font-family: 'Rubik', sans-serif;
-    color: #E4E4E4;
-    margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -23,62 +26,83 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px; /* Округление бегунка */
     border: 3px solid #333338; /* Оформление границ бегунка */
 }
-  
 
 .header {
-    position: fixed;
+    position: sticky;
     user-select: none;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5vh;
+    height: 40px;
     background: rgba(24, 24, 27, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    word-spacing: 14px;
-    border: 1px solid rgba(38, 38, 38, 0.4);
+
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(38, 38, 38, 0.4);
     font-family: 'Rubik', sans-serif;
 }
 
-.logo1 {
+.logo {
     height: 100%;
     width: 150px;
-    padding-left: 120px;
+    margin-left: 50px;
     align-items: center;
     display: flex;
 }
 
-.logo2 {
-    height: auto;
-    width: 2vw;
+.logo a{
+    margin: auto 0;
+    display: flex;
+}
+
+a img {
+    margin: auto;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
 }
 
 .navbar a {
     position: relative;
-    font-size: 1vw;
+    font-size: 24px;
     color: #E4E4E4;
-
     text-decoration: none;
-    padding: 12px;
-    border-radius: 15px;
+    padding: 3px 10px;
+    border-radius: 10px;
     transition: .5s;
 }
 
-.login{
+.navbar a:hover{
+    background: #36363a;
+    width: 15%;
+    transition: .5s;
+}
 
+.navbar a.active {
+    color: #73C398;
+    text-shadow: 0px 0px 2px #73C398;
+}
+
+.login{
     display: flex;
     height: 100%;
-    width: 150px;
-    padding-right: 120px;
+    margin-right: 50px;
     align-items: center;
-
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1vw;
     color: #73C398;
-    
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.login:hover{
+    background: #36363a;
+    transition: .5s;
 }
 
 .login1{
@@ -87,16 +111,11 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 
-.navbar a:hover{
-    background: #212124;
-    width: 15%;
-    
-    transition: .5s;
-}
-
-.navbar a.active {
-    color: #73C398;
-    text-shadow: 0px 0px 2px #73C398;
+.login a{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -141,6 +160,13 @@ p {
     margin-right: 2vw;
 }
 
+.img img{
+    width: 720px;
+    height: 400px;
+    background-color: #BEBEBE;
+    margin-right: 2vw;
+}
+
 .text {
     margin: auto 0 auto auto;
     width: 715px;
@@ -156,6 +182,11 @@ p {
     height: 400px;
     background-color: #BEBEBE;
     margin-left: 2vw;
+}
+
+.img-reversed img {
+    width: 720px;
+    height: 400px;
 }
 
 @media (max-width:2100px) {
@@ -218,86 +249,104 @@ p {
     margin-bottom: 30px;
 }
 
+.category-container:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.category-container h2 {
+    font-size: 32px;
+    margin-bottom: 26px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
 .card {
-    min-width: 400px;
-    height: 450px;
-    border-radius: 15px;
     background-color: #212124;
-    border: 1px solid #333338;
-    margin: 0px auto 65px auto;
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 34px 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border: solid 1px #212124;
+    transition: .5s;
 }
 
-@media (max-width:2100px) {
-    .card {
-        min-width: 350px;
-    }
-}
-
-@media (max-width:1850px) {
-    .card {
-        min-width: 320px;
-        height: 380px;
-    }
-}
-
-@media (max-width:1700px) {
-    .card {
-        min-width: 300px;
-    }
-}
-
-@media (max-width:1570px) {
-    .card {
-        min-width: 280px;
-        height: 320px;
-    }
-}
-
-@media (max-width:940px) {
-    .card {
-        width: 100%;
-        height: 320px;
-    }
+.card:hover {
+    border: solid 1px #333338;
+    transition: .5s;
 }
 
 .card-img {
-    background-color: #212124;
-    border-bottom: 1px solid #333338;
-    height: 60%;
-    border-radius: 15px 15px 0px 0px;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 18px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.card-img img{
-    height: 100%;
-    max-width: 100%;
-    border-radius: 15px 15px 0px 0px;
+.card-img img {
+    max-width: 230px;
+    max-height: 230px;
+    object-fit: cover;
 }
 
-.card-text {
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 32px;
 }
 
-.card-text h2{
-    font-size: 30px;
-    margin: 0;
+.card p {
+    font-size: 20px;
+    margin-bottom: 18px;
+    display: flex;
 }
 
-.card-text p{
-    font-size: 25px;
-    margin: 0;
+.card button {
+    background-color: #73C398;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 49px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 20px;
+    transition: .5s;
+    color: #333333;
 }
 
-.devider {
-    background-color: #212124;
-    height: 4px;
-    margin-bottom: 65px;
+.card button img {
+    margin-right: 11px;
+}
+
+.card button:hover{
+    background-color: #8CEDB9;
+    transition: .5s;
+}
+
+@media (max-width: 950px) {
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+    .card h3, .card p{
+        justify-content: center;
+    }
+    .card-img {
+        margin: 0 auto;
+        max-width: 188px;
+    }
+    .card-img img {
+        max-width: 188px;
+    }
+    .void-1, .void-2, aside, .header {
+        display: none;
+    }
+    
 }
 
 

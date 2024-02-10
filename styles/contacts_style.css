@@ -1,6 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&family=Rubik:wght@300;400;500;700;900&display=swap');
 
+
+* {
+    color: #E4E4E4;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
 
 body {
     background-color: #18181B;
@@ -21,59 +28,81 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     user-select: none;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5vh;
+    height: 40px;
     background: rgba(24, 24, 27, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    word-spacing: 14px;
-    border: 1px solid rgba(38, 38, 38, 0.4);
+
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(38, 38, 38, 0.4);
     font-family: 'Rubik', sans-serif;
 }
 
-.logo1 {
+.logo {
     height: 100%;
     width: 150px;
-    padding-left: 120px;
+    margin-left: 50px;
     align-items: center;
     display: flex;
 }
 
-.logo2 {
-    height: auto;
-    width: 2vw;
+.logo a{
+    margin: auto 0;
+    display: flex;
+}
+
+a img {
+    margin: auto;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
 }
 
 .navbar a {
     position: relative;
-    font-size: 1vw;
+    font-size: 24px;
     color: #E4E4E4;
-
     text-decoration: none;
-    padding: 12px;
-    border-radius: 15px;
+    padding: 3px 10px;
+    border-radius: 10px;
     transition: .5s;
 }
 
-.login{
+.navbar a:hover{
+    background: #36363a;
+    width: 15%;
+    transition: .5s;
+}
 
+.navbar a.active {
+    color: #73C398;
+    text-shadow: 0px 0px 2px #73C398;
+}
+
+.login{
     display: flex;
     height: 100%;
-    width: 150px;
-    padding-right: 120px;
+    margin-right: 50px;
     align-items: center;
-
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1vw;
     color: #73C398;
-    
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.login:hover{
+    background: #36363a;
+    transition: .5s;
 }
 
 .login1{
@@ -82,16 +111,11 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 
-.navbar a:hover{
-    background: #212124;
-    width: 15%;
-    
-    transition: .5s;
-}
-
-.navbar a.active {
-    color: #73C398;
-    text-shadow: 0px 0px 2px #73C398;
+.login a{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
 }
 
 
