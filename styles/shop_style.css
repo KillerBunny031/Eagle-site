@@ -263,6 +263,7 @@ h2 {
     font-size: 24px;
     margin-bottom: 18px;
     display: flex;
+    max-width: 230px;
 }
 
 .card p {
@@ -281,6 +282,7 @@ h2 {
     font-size: 20px;
     transition: .5s;
     color: #333333;
+    margin-top: auto;
 }
 
 .card button img {
