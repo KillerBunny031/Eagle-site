@@ -162,6 +162,24 @@ a img {
     font-size: 64px;
 }
 
+@media (max-width:1600px ) {
+    .img-text h1 {
+        font-size: 50px;
+    }
+    .img-text {
+        margin: -180px 0 0 20px;
+    }
+}
+
+@media (max-width:1250px ) {
+    .img-text h1 {
+        font-size: 40px;
+    }
+    .img-text {
+        margin: -160px 0 0 20px;
+    }
+}
+
 .img-text h1#akcent {
     color: #73C398;
 }
@@ -250,6 +268,7 @@ article {
 
 .main-text{
     max-width: 493px;
+    margin-right: 54px;
 }
 
 .main-text h2 {
