@@ -238,13 +238,14 @@ a img {
 
  /* footer */
 
-footer {
+ footer {
     background-color: #212124;
     border-top: 1px solid #262626;
     display: flex;
     flex-direction: column;
-    padding: 42px 94px;
+    padding: 25px 50px;
     font-family: 'Nunito', sans-serif;
+
 }
 
 .links {
