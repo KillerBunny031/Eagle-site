@@ -123,6 +123,24 @@ a img {
 
 
 
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrapper {
+    flex-grow: 1;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
 
 
 
@@ -139,7 +157,7 @@ a img {
 .main-block {
     max-height: 600px;
     width: 100%;
-    margin-bottom: 95px;
+    margin-bottom: 90px;
     user-select: none;
 }
 
@@ -234,7 +252,7 @@ article {
 
 .article-wrapper {
     width: 100%;
-    margin-bottom: 96px;
+    margin-bottom: 90px;
     display: flex;
     padding: 0 99px;
 }

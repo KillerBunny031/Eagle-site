@@ -27,6 +27,32 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #333338; /* Оформление границ бегунка */
 }
 
+
+
+
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrapper {
+    flex-grow: 1;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+
+
+
 .header {
     position: sticky;
     user-select: none;
