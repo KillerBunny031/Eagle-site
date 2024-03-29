@@ -125,7 +125,7 @@ a img {
 
 /* ---------------- page-closed ---------------- */
 
-.page-closed {
+/* .page-closed {
     position: relative;
     z-index: 2;
     height: 100vh;
@@ -164,7 +164,7 @@ body {
 
 .wrapper {
     margin-top: -100vh;
-}
+} */
 
 /* --------------------------------------------- */
 
@@ -203,7 +203,109 @@ aside {
 .void-3 {
     width: 200px;
     margin-top: 100px;
+    display: flex;
 }
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: sticky;
+    top: 10%;
+    height: 60px;
+}
+
+.cart-img, .cart-goods {
+    margin: 0 auto;
+}
+
+.cart-img:hover + .cart-goods{
+    display: block;
+}
+
+/* .cart-goods {
+    display: none;
+} */
+
+.cart-img img {
+    height: 60px;
+}
+
+.cart-img {
+    display: flex;
+}
+
+.cart-img p {
+    margin-left: -20px;
+    padding: 10px;
+    max-height: 10px;
+    border-radius: 500px;
+}
+
+
+
+.cart-goods {
+    margin-top: 10px;
+}
+
+.cart li {
+    list-style-type: none;
+}
+
+.goods-card {
+    width: 320px;
+    height: 120px;
+    background-color: #212124;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.goods-img {
+    margin: auto 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.goods-img img {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.goods-text {
+    margin: auto 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.goods-card h2 {
+    font-size: 16px;
+}
+
+.goods-card h3 {
+    font-size: 14px;
+}
+
+.amount {
+    margin: auto 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount span {
+    margin: auto;
+}
+
+.amount button {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
 
 .move-container {
     display: flex;
@@ -278,14 +380,14 @@ main {
     margin-bottom: 80px;
 }
 
-h2 {
+.category-container h2 {
     font-size: 32px;
     margin-bottom: 26px;
 }
 
 .cards-container {
     display: flex;
-    
+
     flex-wrap: wrap;
     box-sizing: content-box;
 }
@@ -297,10 +399,10 @@ h2 {
     padding: 34px 35px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    margin-right: 50px;
     border: solid 1px #212124;
     transition: .5s;
+    margin-right: 10px;
+    margin-bottom: 10px;
     
 }
 
