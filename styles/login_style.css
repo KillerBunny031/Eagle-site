@@ -85,20 +85,25 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    transition: .5s;
 }
 
-
-
-/* .container button:hover {
+.container button:hover {
     background-color: #8DF2BC;
-    transition: 1s;
-    transform: matrix();
-} */
+    transition: .5s;
+}
 
 .container button.hidden{
     background-color: transparent;
     border-color: #18181B;
 }
+
+.container button.hidden:hover{
+    background-color: transparent;
+    border-color: #18181B;
+    background-color: #9aebc0;
+}
+
 
 .container form{
     background-color: #1E1E21;
@@ -120,6 +125,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     width: 100%;
     outline: none;
+    color: rgb(197, 197, 197);
 }
 
 .form-container{
