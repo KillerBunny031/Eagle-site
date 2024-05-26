@@ -452,6 +452,12 @@ footer {
     color: #E4E4E4;
     text-decoration: none;
     font-size: 16px;
+    transition: .5s;
+}
+
+.contacts-media a:hover{
+    color: #ffffff;
+    transition: .5s;
 }
 
 .contacts-media a:not(:last-child){
