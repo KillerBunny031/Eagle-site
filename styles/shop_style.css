@@ -365,10 +365,11 @@ main {
 .warning {
     background-color: #212124;
     border: solid 1px #333338;
-    height: 80px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .warning span {
@@ -403,7 +404,6 @@ main {
     flex-direction: column;
     border: solid 1px #212124;
     transition: .5s;
-    margin-right: 20px;
     margin-bottom: 20px;
     
 }

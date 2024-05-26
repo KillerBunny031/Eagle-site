@@ -323,6 +323,7 @@ input, textarea:hover {
 .discord-button {
     width: 100%;
     display: flex;
+    margin-bottom: 100px;
 }
 
 .discord-button a{
