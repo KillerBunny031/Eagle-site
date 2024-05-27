@@ -134,10 +134,21 @@ a img {
     width: 60vw;
     margin: 0 auto;
     padding: 90px 0px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .block {
     display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .block:not(:last-child) {
@@ -154,59 +165,58 @@ p {
 }
 
 .img {
-    width: 720px;
-    height: 400px;
+    max-width: 720px;
+    max-height: 400px;
     background-color: #BEBEBE;
-    margin-right: 2vw;
 }
 
 .img img{
-    width: 720px;
-    height: 400px;
+    max-width: 720px;
+    max-height: 400px;
     background-color: #BEBEBE;
-    margin-right: 2vw;
+    object-fit: cover;
 }
 
 .text {
-    margin: auto 0 auto auto;
-    width: 715px;
+    margin: auto 0;
+    max-width: 715px;
 }
 
 .text-reversed {
-    margin: auto 0 auto 0;
-    width: 715px;
+    margin: auto 0;
+    max-width: 715px;
 }
 
 .img-reversed {
-    width: 720px;
-    height: 400px;
+    max-width: 720px;
+    max-height: 400px;
     background-color: #BEBEBE;
-    margin-left: 2vw;
 }
 
 .img-reversed img {
-    width: 720px;
-    height: 400px;
+    max-width: 720px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 @media (max-width:2100px) {
     .img, .img-reversed {
-        height: 350px;
+        max-height: 350px;
     }
     .img img, .img-reversed img {
-        height: 350px;
+        max-height: 350px;
         width: 100%;
     }
 }
 
 @media (max-width:1700px) {
     .img, .img-reversed {
-        height: 300px;
+        max-height: 300px;
     }
 
     .img img, .img-reversed img {
-        height: 300px;
-        width: 100%;
+        max-height: 300px;
+        max-width: 100%;
     }
 
     h2 {
@@ -220,22 +230,22 @@ p {
 
 @media (max-width:1570px) {
     .img, .img-reversed {
-        height: 250px;
+        max-height: 250px;
     }
 
     .img img, .img-reversed img {
-        height: 250px;
+        max-height: 250px;
         width: 100%;
     }
 }
 
 @media (max-width:1300px) {
     .img, .img-reversed {
-        height: 200px;
+        max-height: 200px;
     }
 
     .img img, .img-reversed img {
-        height: 100%;
+        max-height: 100%;
         width: 100%;
     }
 

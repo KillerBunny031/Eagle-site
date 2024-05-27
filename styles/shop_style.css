@@ -191,7 +191,7 @@ body {
 
 @media (max-width:450px) {
     .wrapper-1 {
-     margin: 0px 20px;
+     margin: 0px;
     }
 }
 
@@ -359,6 +359,7 @@ main {
 @media (max-width: 450px) {
     main {
         margin: 0 10px;
+        padding: 0 10px;
     }
 }
 
@@ -454,6 +455,12 @@ main {
     margin-top: auto;
 }
 
+@media (max-width:500px) {
+    .card button {
+        padding: 6px 25px;
+    }
+}
+
 .card button img {
     margin-right: 11px;
 }
@@ -478,9 +485,10 @@ main {
     .card-img img {
         max-width: 188px;
     }
-    .void-1, .void-2, aside, .header {
+    .void-1, .void-2, .void-3, aside, .header {
         display: none;
     }
+
     
 }
 
