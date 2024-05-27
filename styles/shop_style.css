@@ -46,6 +46,10 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Rubik', sans-serif;
 }
 
+header button {
+    display: none;
+}
+
 .logo {
     height: 100%;
     width: 150px;
@@ -470,6 +474,10 @@ main {
     transition: .5s;
 }
 
+.burger_menu {
+    display: none;
+}
+
 @media (max-width: 1016px) {
     .card {
         width: 100%;
@@ -485,13 +493,66 @@ main {
     .card-img img {
         max-width: 188px;
     }
-    .void-1, .void-2, .void-3, aside, .header {
+    .void-1, .void-2, .void-3, aside {
         display: none;
     }
 
     
 }
 
+@media (max-width: 1235px) {
+
+    .navbar, .login {
+        display: none;
+    }
+
+    header button {
+        display: flex;
+        flex-direction: column;
+        width: 35px;
+        margin-right: 50px;
+        background-color: #18181B;
+        border: none;
+    }
+
+    .burger_menu{
+        /* display: flex; */
+        flex-direction: column;
+        width: 100%;
+        min-height: 100svh;
+        background-color: #212124;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger_menu a {
+        font-size: 48px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+}
+
+#h1 {
+    width: 50%;
+    height: 5px;
+    background-color: #E4E4E4;
+    margin-bottom: 2px;
+    margin-left: auto;
+}
+
+#h2 {
+    width: 80%;
+    height: 5px;
+    background-color: #E4E4E4;
+    margin-bottom: 2px;
+    margin-left: auto;
+}
+
+#h3 {
+    width: 100%;
+    height: 5px;
+    background-color: #E4E4E4;
+}
 
 
 
