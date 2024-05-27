@@ -137,12 +137,12 @@ header button {
         flex-direction: column;
         width: 35px;
         margin-right: 50px;
-        background-color: #18181B;
+        background-color: rgba(0, 0, 0, 0);
         border: none;
     }
 
     .burger_menu{
-        /* display: flex; */
+        position: fixed;
         flex-direction: column;
         width: 100%;
         min-height: 100svh;
