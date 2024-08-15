@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagle | Профиль</title>
     <link rel="stylesheet" href="../styles/account.css">
+    <link rel="stylesheet" href="../styles/modules/header.css">
     <link rel="icon" href="../images/Eagle_icon.png" type="image/x-icon">
 
 
@@ -12,15 +13,13 @@
 <body>
     
     <header class="header">
-        <div class="logo1">
-            <img src="../images\Eagle_logo.png" alt="test" class="logo2">
-        </div>
+        <div class="logo"><a href="../index.html"><img src="../images\Eagle_logo.png" alt="test"></a></div>
         <nav class="navbar">
             <a href="../index.html">Главная</a>
             <a href="shop.html">Интернет-Магазин</a>
             <a href="shooting_range.html">Тир</a>
             <a href="employment.html">Трудоустройство</a>
-            <a href="contacts.html" class="active">Контакты</a>
+            <a href="contacts.html" class="active" >Контакты</a>
         </nav>
         <div class="login">
             <a href="./login_temp.html" class="login"><img src="../images\Login.png" alt="login1">Авторизация</a>
@@ -49,31 +48,31 @@
                 <div class="left-category">
                     <div class="categories">
                         <div class="choose">
-                            <img src="images\profile\info.png" alt="">
+                            <img src="../images\profile\info.png" alt="">
                             <a href="">Введение</a>
                         </div>
                         <div class="choose">
-                            <img src="images\profile\dups.png" alt="">
+                            <img src="../images\profile\dups.png" alt="">
                             <a href="">Дубликаты</a>
                         </div>
                         <div class="choose">
-                            <img src="images/profile/idea.png" alt="">
+                            <img src="../images/profile/idea.png" alt="">
                             <a href="">Предложения</a>
                         </div>
                         <div class="choose">
-                            <img src="images/profile/warn.png" alt="">
+                            <img src="../images/profile/warn.png" alt="">
                             <a href="">Наказания</a>
                         </div>
                         <div class="choose">
-                            <img src="images/profile/characters.png" alt="">
+                            <img src="../images/profile/characters.png" alt="">
                             <a href="">Персонажи</a>
                         </div>
                         <div class="choose">
-                            <img src="images/profile/request.png" alt="">
+                            <img src="../images/profile/request.png" alt="">
                             <a href="">Запросы</a>
                         </div>
                         <div class="choose">
-                            <img src="images/profile/report.png" alt="">
+                            <img src="../images/profile/report.png" alt="">
                             <a href="">Отчёты</a>
                         </div>
                     </div>
@@ -96,24 +95,152 @@
 
         <div class="all-box">
             <div class="title">
-
+                <h1 id="title">Начало работы</h1>
             </div>
 
             <div class="box-category">
                 <div class="category">
-
+                    <button onclick="change_button(1)">Начало работы</button>
+                    <button onclick="change_button(2)">Получение продукции</button>
+                    <button onclick="change_button(3)">Внешний вид</button>
+                    <button onclick="change_button(4)">Работа с оборудованием</button>
+                    <button onclick="change_button(5)">Продажа товара</button>
+                    <button onclick="change_button(6)">Скидочные карты и купоны</button>
+                    <button onclick="change_button(7)">Реклама</button>
+                    <button onclick="change_button(8)">Безопасность</button>
+                    <button onclick="change_button(9)">Отчёты</button>
+                    <button onclick="change_button(10)">Запросы</button>
                 </div>
 
                 <div class="info-body">
-                    <div class="block-1">
+                    <div class="text-block" id="1">
+                        <p> <span>Перед открытием следует обязательно выполнить эти пункты:</span>
+                            <ol>
+                                <li>Установить дубликат</li>
+                                <li>Проверить целостность и правильность установленного дубликата</li>
+                                <li>Установить радио в помещении. Радиостанцию можно выбирать любую, главное, чтобы она была +- спокойная и не очень громкая. Громкость стоит выставлять на 2.<br>
+                                    Рекомендуется устанавливать 2 штуки, чтобы звук был равномерно слышен по всему залу. Одно на торговый автомат и второе на оружейный шкаф у кассы.
+                                    <img src="../images/account/0Qfnbl9.png" alt="">
+                                    <img src="../images/account/WlGnST8.png" alt="">
+                                </li>
+                                <li>Проверить наличие ассортимента, положить на стойку и заполнить планшет.</li>
+                                <li>Установить метку на карте. (будет дополнено позже)</li>
+                                <li>После завершения подготовки, зайдите в канал ✨│открытия на нашем Дискорд сервере и пропишите команду /открытие <br>
+                                    После появится подсказка по команде. Исходя из места открытия магазина, выберите нужную команду. <br>
+                                    После ввода команды, она оповестит участников об открытии магазина. Через 2 часа сообщение автоматически удаляется.
+                                </li>
+                            </ol>
+                        </p>   
+                    </div>
+                    
+
+                    <div class="text-block" id="2" style="display: none;">
+                        <p>
+                            <span>Важно понимать, что товар Вы закупаете за свой счет, именно поэтому Вам был необходим стартовый капитал для поступления к нам.</span><br>
+                            <span>Сам запрос заполняется по определенной форме, которая находится на нашем дискорд сервере.</span><br>
+                            <span>После составления запроса стоит ждать. Его выдают ролевые редакторы, поэтому нет определенной времени выдачи. Могут выдать сразу, а могут и через несколько дней.
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="text-block" id="3" style="display: none;">
+                        <span>Работа на предприятии ведется исключительно в форме, выдаваемой Вам по окончании стажировки.</span><br>
+                        <span>Форма может быть дополнена головным убором по усмотрению продавца (маски, пакеты, банданы, балаклавы и т.д. запрещены)</span>
+                    </div>
+
+                    <div class="text-block" id="4" style="display: none;">
+                        <p>
+                            <span>В магазине установлены камеры видеонаблюдения, магнитные замки, железные ставни на окна и персональный компьютер.</span><br>
+                            <span>С каждым из этого стоит уметь обращаться.</span><br>
+                        </p>
                         
+
+                        <h2>Камеры видеонаблюдения.</h2>
+                        <p>Наши камеры НЕ способны передавать информацию куда-либо, кроме как на персональный компьютер, установленный за стойкой.<br>
+                            Все записи хранятся в облаке и дублируются на жесткий диск пк. При необходимости записи может просмотреть любой из сотрудников.<br>
+                            Доступ к удалению видеозаписей на пк запрещен.
+                        </p>
+                        <img src="../images/account/camera.png" alt="">
+
+                        <h2>Магнитные замки</h2>
+                        <p>
+                            Важно понимать, что кейпад - всего лишь условность. В IC на наших дверях установлены магнитные замки.<br>
+                            (короче пока что еще не продумано, так что просто двери)
+                        </p>
+                        <img src="../images/account/magnit.png" alt="">
+
+                        <h2>Персональный компьютер</h2>
+                        <p>
+                            ПК полезен для выхода в интернет и просмотра видеозаписей с камер.<br>
+                            Так же на нем хранится БД с именами владельцев “карт постоянного покупателя”.<br>
+                            Использование пк для развлечения запрещено.<br>
+                        </p>
+                        <img src="../images/account/pc.png" alt="">
+
+                        <h2>Ставни на окна</h2>
+                        <p>Используются в случае закрытии магазина. Не предназначены для предотвращения незаконных действий непосредственно при наличии сотрудников внутри.<br>
+                            Проще говоря, закрывать их по своей прихоти нельзя. Закрываются они только при полном или временном закрытии магазина.
+                        </p>
+                        <img src="../images/account/stavni.png" alt="">
                     </div>
-                    <div class="block-2">
-                       
+
+                    <div class="text-block" id="5" style="display: none;">
+                        <p>
+                            Весь товар из нашего ассортимента, помимо скидочных, подарочных карт, ИРП может быть продан лишь лицам старше 21 года и, имеющим соответствующую лицензию.<br>
+                            Перед продажей Вы ОБЯЗАНЫ попросить у покупателя IDC и лицензию. Без предоставлению того или иного документа товар не может быть продан.
+
+                        </p>
                     </div>
-                    <div class="block-3">
+
+                    <div class="text-block" id="6" style="display: none;">
+                        <p>
+                            <span>Всего у нас есть 6 карт и купонов. Пройдемся по ним.</span><br>
+                            <span>Подарочные карты</span>
+                            <li>Подарочная карта на 50.000 рублей</li>
+                            <li>Подарочная карта на 100.000 рублей</li>
+                            <li>Подарочная карта на 200.000 рублей</li>
+
+                            <span>Данные карты продаются в магазине так же, как и остальной товар.
+                            </span><br>
+                            <span>По этим картам может производиться оплата товара. Т.е., если, например, человек оформляет заказ на 45 тысяч, то он может расплатиться любой из вышеперечисленных карт.
+                            </span><br>
+                            <br>
+                            <span>Данные карты одноразовые, после оплаты ею товара, стоит ее забрать у покупателя.</span>
+                            <br>
+                            <span>Скидочные купоны</span><br>
+                            <li>Праздничный скидочный купон</li>
+                            <dl>Выдается всем посетителям по праздникам. Их запрос осуществляется с одобрения директора или зам.директора. Скидка 5%</dl>
+                            <li>Скидочный купон</li>
+                            <dl>Выдается всем покупателям, оформившим покупку от 50.000 рублей и более. Скидка 10%</dl>
+                            <span>Тут ничего сложного. Просто купоны, делающие скидки при покупки.</span><br>
+                            <span>Купоны также являются одноразовыми, после оформления скидки их стоит забирать у покупателя. При использовании купона, новый не выдается.</span><br>
+                            <br>
+                            <span>Карта постоянного покупателя</span>
+                            <li>Карта постоянного покупателя. Скидка 20%
+                            </li>
+                            <dl>Выдается исключительно по усмотрению директора или зам.директора.<br>
+                                Имеет неограниченное количество использований.
+                                </dl>
+                        </p>
+                    </div>
+
+                    <div class="text-block" id="7" style="display: none;">
+                        adadd
+                    </div>
+
+                    <div class="text-block" id="8" style="display: none;">
+                        adadd
+                    </div>
+
+                    <div class="text-block" id="9" style="display: none;">
+                        adadd
+                    </div>
+
+                    <div class="text-block" id="10" style="display: none;">
+                        adadd12
+                    </div>
                         
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -126,6 +253,6 @@
 
 
     <script src="../js/header.js"></script>
-
+    <script src="../js/account.js"></script>
 </body>
 </html>
