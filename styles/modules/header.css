@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     position: sticky;
     user-select: none;
@@ -115,18 +119,36 @@ header button {
 
     }
 
-    .burger_menu{
+    .burger_wrapper {
         position: fixed;
-        flex-direction: column;
+        height: 100%;
         width: 100%;
+    }
+
+    .burger_menu{
+        margin-left: auto;
+        flex-direction: column;
+        width: 80%;
         min-height: 100svh;
         background-color: #212124;
-        justify-content: center;
-        align-items: center;
+        align-items: end;
+        animation-duration: 0.5s;
+        animation-name: slidein;
+        padding: 60px 10px 40px 60px;
+    }
+
+    @keyframes slidein {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 80%;
+        }
     }
 
     .burger_menu a {
-        font-size: 48px;
+        font-size: 20px;
         text-decoration: none;
         margin-bottom: 20px;
     }
