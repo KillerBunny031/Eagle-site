@@ -27,7 +27,10 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #333338; /* Оформление границ бегунка */
 }
 
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
 
 
 
