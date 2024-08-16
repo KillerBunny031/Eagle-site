@@ -24,7 +24,7 @@
 .logo {
     height: 100%;
     width: 150px;
-    margin-left: 50px;
+    margin-left: 20px;
     align-items: center;
     display: flex;
 }
@@ -112,7 +112,7 @@ header button {
         display: flex;
         flex-direction: column;
         width: 35px;
-        margin-right: 50px;
+        margin-right: 20px;
         /* background-color: #18181B; */
         background-color: rgba(0, 0, 0, 0);
         border: none;
@@ -129,7 +129,7 @@ header button {
         margin-left: auto;
         flex-direction: column;
         width: 30%;
-        min-height: 100svh;
+        min-height: 100%;
         background-color: #212124;
         align-items: end;
         animation-duration: 0.5s;
