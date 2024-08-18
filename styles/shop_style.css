@@ -262,11 +262,13 @@ aside a:hover{
 
 /* Main */
 
+/* main padding must be 50, but it work not well for some reason */
+
 main {
     max-width: 1100px;
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 45px;
     margin-top: 100px;
 }
 
