@@ -136,6 +136,7 @@ header button {
         animation-duration: 0.5s;
         animation-name: slidein;
         padding: 60px 10px 60px 10px;
+        z-index: 100;
     }
 
     .burger_menu a {
