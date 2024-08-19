@@ -129,7 +129,7 @@ header button {
     .burger_menu{
         margin-left: auto;
         flex-direction: column;
-        width: 30%;
+        width: 32vw;
         min-height: 100%;
         background-color: #212124;
         align-items: end;
@@ -139,7 +139,8 @@ header button {
     }
 
     .burger_menu a {
-        font-size: 32px;
+        font-size: 3vw;
+        /* font-size: 32px; */
         text-decoration: none;
         margin-bottom: 20px;
         white-space: nowrap;
@@ -196,10 +197,10 @@ header button:hover{
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     .burger_menu a {
-        font-size: 16px;
+        font-size: 5vw;
     }
 
     .burger_menu{
