@@ -97,7 +97,7 @@ header button {
     display: none;
 }
 
-.burger_menu {
+.burger_menu, .burger_wrapper {
     display: none;
 }
 
@@ -123,6 +123,7 @@ header button {
         position: fixed;
         height: 100%;
         width: 100%;
+        display: block;
     }
 
     .burger_menu{
