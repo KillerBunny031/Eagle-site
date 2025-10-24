@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6fd6eed (FIXED)
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -250,6 +253,7 @@ body::-webkit-scrollbar-thumb {
 
 .container.active .toggle-right{
     transform: translateX(200%);
+<<<<<<< HEAD
 =======
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
@@ -503,4 +507,6 @@ body::-webkit-scrollbar-thumb {
 .container.active .toggle-right{
     transform: translateX(200%);
 >>>>>>> backup-branch
+=======
+>>>>>>> 6fd6eed (FIXED)
 }

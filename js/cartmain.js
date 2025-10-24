@@ -7,7 +7,7 @@ function checkCooldown() {
     if (!lastOrderTime) return { allowed: true, remaining: 0 }; // Можно отправлять
     
     const now = Date.now();
-    const cooldownTime = 30 * 60 * 1000; // 10 минут в миллисекундах
+    const cooldownTime = 30 * 60 * 1000; // 30 минут в миллисекундах
     const timeSinceLastOrder = now - parseInt(lastOrderTime);
     
     if (timeSinceLastOrder < cooldownTime) {

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6fd6eed (FIXED)
 gsap.fromTo(
     ".loading-page",
     { opacity: 1 },
@@ -22,6 +25,7 @@ gsap.fromTo(
       duration: 1,
       delay: 2.6,
     }
+<<<<<<< HEAD
 =======
 gsap.fromTo(
     ".loading-page",
@@ -47,4 +51,6 @@ gsap.fromTo(
       delay: 2.6,
     }
 >>>>>>> backup-branch
+=======
+>>>>>>> 6fd6eed (FIXED)
   );
