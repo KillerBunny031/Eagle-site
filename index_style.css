@@ -588,3 +588,209 @@ footer {
         font-size: 16px;
     }
 }
+
+/* ===== ОБЩИЕ АНИМАЦИИ ===== */
+
+/* Плавное появление */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Пульсация для кнопок */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Плавное увеличение */
+.scale-up {
+    animation: scaleUp 0.3s ease-out;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Дрожание при ошибке */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* ===== АНИМАЦИИ ДЛЯ КАРТОЧЕК ТОВАРОВ ===== */
+
+/* Поднятие карточки при наведении */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Появление карточек по очереди */
+.card-stagger {
+    animation: cardStagger 0.6s ease-out;
+}
+
+@keyframes cardStagger {
+    from { 
+        opacity: 0;
+        transform: translateY(30px) rotateX(10deg);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+/* ===== АНИМАЦИИ ДЛЯ КНОПОК ===== */
+
+/* Кнопка с градиентным свечением */
+.glow-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.glow-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.glow-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.glow-btn:hover::before {
+    left: 100%;
+}
+
+/* ===== АНИМАЦИИ ДЛЯ КОРЗИНЫ ===== */
+
+/* Добавление в корзину */
+.add-to-cart {
+    animation: addToCart 0.5s ease-out;
+}
+
+@keyframes addToCart {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Удаление из корзины */
+.remove-from-cart {
+    animation: removeFromCart 0.3s ease-out;
+}
+
+@keyframes removeFromCart {
+    to { 
+        opacity: 0;
+        transform: translateX(100px) scale(0.5);
+    }
+}
+
+/* ===== АНИМАЦИИ ДЛЯ NAVBAR ===== */
+
+/* Подчеркивание ссылок */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3498db;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===== АНИМАЦИИ ДЛЯ ЗАГРУЗКИ ===== */
+
+/* Вращающийся лоадер */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Скелетон-загрузка */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeletonLoading 1.5s infinite;
+}
+
+@keyframes skeletonLoading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ===== СПЕЦИАЛЬНЫЕ ЭФФЕКТЫ ===== */
+
+/* Парящая анимация */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Мигание для уведомлений */
+.blink {
+    animation: blink 1s ease-in-out 3;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Волна */
+.wave {
+    animation: wave 1s ease-in-out;
+}
+
+@keyframes wave {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
